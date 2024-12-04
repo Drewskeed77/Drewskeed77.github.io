@@ -1,0 +1,30 @@
+body {
+    margin: 0em 12em;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+button {
+    background-color: #cfcfcf;
+    padding: 1em;
+    margin: .5em auto;
+    border-radius: .5em 1em;
+    width: 50%;
+    display: block
+};
+
+.text {
+    text-align: center;
+}
+
+#question-div {
+    display: none;
+};
+
+#score-tag {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}

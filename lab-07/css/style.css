@@ -1,0 +1,87 @@
+body {
+  background-image: url("../img/BunkerBG.jpg");
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(20px);
+  text-align: center;
+  color: aliceblue !important;
+  box-sizing: border-box;
+}
+
+
+
+/* https://websitemaintenance.medium.com/create-a-news-ticker-using-html-and-css-quick-guide-fca4fbf872dd */
+.ticker-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px rgb(114, 216, 114) solid;
+  border-bottom: 2px rgb(114, 216, 114) solid;
+  color: rgb(114, 216, 114);
+}
+.ticker-wrapper {
+  width: 100%;
+  padding-left: 100%;
+  background-color: transparent;
+}
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-transition {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 50s;
+}
+.ticker-transition:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.ticker-item {
+  display: inline-block;
+  padding: 0 2rem;
+  color: rgb(114, 216, 114) !important;
+}
+
+
+@font-face {
+    font-family: 'bunker';
+    src: url('../fonts/pirulen rg.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'terminal';
+  src: url("../fonts/terminal_ldr.ttf");
+}
+
+@font-face {
+  font-family: 'code';
+  src: url("../fonts/Code.ttf");
+}
+
+.terminal-font {
+  font-family: 'terminal';
+  font-size: 30px;
+}
+
+.bunker-font {
+    font-family: 'bunker';
+}
+
+ul {
+  list-style-type: none;
+}
+p, li {
+  font-family: 'code';
+  font-size: 25px;
+}
