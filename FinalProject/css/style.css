@@ -1,0 +1,251 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1E1E2F;  /* Dark background for a clean, minimal look */
+    color: #E1E1E6;  /* Light text for contrast */
+    min-width: 600px;
+}
+
+/* Header Styles */
+header {
+    background-color: #292B38;  /* Darker shade for the header */
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+#options {
+    align-items: center;
+}
+
+#helpDiv {
+    background-color: #33354C;  /* Darker section for search area */
+    border: 2px solid #1E1E2F;
+    border-radius: 1em;
+    margin: .5em;
+    padding: 1em;
+    width: 400px;
+    top: 100px;
+    right: 10px;
+}
+
+/* Search Input */
+input {
+    padding: 0.8em;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #2E2F40;  /* Dark input field */
+    color: #E1E1E6;
+    font-size: 14px;
+}
+
+input:focus {
+    background-color: #3C3F56;  /* Slightly lighter shade on focus */
+}
+
+/* Button Styles */
+button {
+    padding: 0.8em 1.5em;
+    background-color: #5D5F73;  /* Soft purple button */
+    border: none;
+    color: #E1E1E6;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7C7F96;  /* Lighten on hover */
+}
+
+/* Main Wrapper */
+#main-wrapper {
+    background-color: #1E1E2F;
+    padding: 2em 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+    max-width: 800px;
+}
+
+/* Search Wrapper */
+#search-wrapper {
+    text-align: center;
+    padding: 2em 1em;
+    background-color: #33354C;  /* Darker section for search area */
+    border-radius: 8px;
+}
+
+/* Information Wrapper */
+#information-wrapper {
+    padding: 10px 1em;
+    background-color: #373A4D;  /* Dark gray-green background */
+    border-radius: 8px;
+    height: 40px;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Forecast Container */
+#forecast-container {
+    background-color: #292B38;  /* Dark background for forecast container */
+    height: auto;
+    width: auto;
+    padding: 1.5em 2em;
+    margin-top: 2em;
+    border-radius: 8px;
+}
+
+/* Forecast Wrapper (Grid layout for forecast cards) */
+#forecast-wrapper {
+    display: grid;
+    gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+#forecast-options {
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    background-color: #2E2F40;
+    color: white;
+}
+
+/* Forecast Card Style */
+.forecast-card {
+    background-color: #2E2F40;  /* Card background with dark theme */
+    width: 100%;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forecast-card:hover {
+    transform: translateY(-8px);  /* Slight hover effect for a modern feel */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow on hover */
+}
+
+/* Time Element */
+.forecast-card .time {
+    font-size: 14px;
+    font-weight: bold;
+    color: #A9A9B5; /* Subtle gray for time */
+}
+
+/* Temperature Element */
+.forecast-card .temp {
+    font-size: 20px;
+    color: #FF9F00; /* Bright orange for temperature */
+}
+
+/* Condition Text */
+.forecast-card .condition {
+    font-size: 13px;
+    color: #A9A9B5;  /* Lighter gray for weather description */
+    margin-top: 0.5em;
+}
+
+/* Weather Icon Image */
+.forecast-card img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+/* Test Image */
+#test-image {
+    width: 30px;
+    height: 30px;
+}
+
+#help {
+    width: 30px;
+    height: 30px;
+}
+
+.spinner {
+    display: block;
+    margin: 0 auto; /* Optional: Centers the spinner */
+}
+
+.weather-img-container img {
+    display: none;  /* Hide the weather image initially */
+}
+
+/* Toggle Switch CSS */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1E1E2F;;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #2E2F40;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #4d506d;;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4d506d;;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+

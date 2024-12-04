@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Module 04 - Lab James A. Reed</title>
+</head>
+<body>
+    <button onclick="getAdvice()">Get Advice</button>
+    <img id="Dog" src="">
+    <p id="advice"></p>
+    <p>Received <span id="adviceCount">0</span> pieces of advice</p>
+</body>
+<script>
+    
+    let adviceCounter = 0;
+
+    function getAdvice() {
+        $(document).load('https://api.adviceslip.com/advice', function (resource) {
+            $('#advice').text(JSON.parse(resource).slip.advice)
+            adviceCounter++;
+            $('#adviceCount').text(adviceCounter)
+        })
+    }
+
+</script>
+</html>

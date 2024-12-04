@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doug's Dogs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/hot-dog-restaurant.jpg" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Doug's Dogs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#our-story">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="hero-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/hot-dog-restaurant.jpg" alt="Delicious Hot Dog" class="img-fluid">
+                </div>
+                <div class="col-lg-6 my-auto">
+                    <h1>Welcome to Doug's Dogs</h1>
+                    <p>Doug's Dogs has always prided itself on using the cheapest ingredients to produce food that is legally edible.</p>
+                    <p>What's in our hot dogs? You'll have to eat them to find out.</p>
+                    <p>Doug's Dogs. When you're here, you're at Doug's Dogs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Story Section -->
+    <div id="our-story" class="container py-5">
+        <h2 class="section-title">Our Story</h2>
+        <p>It all started in 1957 when Doug Sr. started his boiling water cart. It would be another ten years before he had the idea to put things inside the boiled water to see if they sold any better.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/hot-dog-cart.jpg" alt="Doug's Dog Cart" class="img-fluid">
+            </div>
+            <div class="col-md-6 my-auto">
+                <p>Doug Sr.'s Boiled Water Cart, taken as close to the city of Witchita as he was legally permitted to be.</p>
+            </div>
+        </div>
+
+        <blockquote class="block-quote">
+            "Doug's Dogs is registered as a restaurant with the county."
+        </blockquote>
+
+        <p>The business has been handed down over generations. From Doug Sr. all the way down to Doug III, who now runs the business.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/doug.jpg" usemap="#workmap" alt="Hot Dogs at Doug's Dogs" class="img-fluid">
+
+                <map name="workmap">
+                    <area shape="rect" coords="350, 350 ,512 ,512" alt="???" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUJcmljayByb2xs" target="_blank">
+                </map>
+            </div>
+            <div class="col-md-6 my-auto">
+                <p>Doug III getting hot dogs at a competitor's stand. "My doctor told me to stop eating our food."</p>
+            </div>
+        </div>
+
+        <blockquote class="block-quote">
+            "Every dog is made with ingredients!"
+        </blockquote>
+
+        <p>Do you like your dogs cold? Do you like your dogs lukewarm? However you like your dogs, Doug's Dogs has the dogs for you.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/hot-dog.jpg" alt="Hot Dogs at Doug's Dogs" class="img-fluid">
+            </div>
+            <div class="col-md-6 my-auto">
+                <p>Our popular 'Doug Dog', featuring toppings and flavor.</p>
+                <em>*Doug Dog also available without flavor*</em>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact" class="container py-5">
+        <h2 class="section-title">Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Doug's Dogs. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+</body>
+</html>

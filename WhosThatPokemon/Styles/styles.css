@@ -1,0 +1,14 @@
+body {
+    margin: 0em 6em;
+    padding: 2em;
+    text-align: center;
+}
+
+#pokemon-image {
+    width: 500px;
+}
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('PokemonClassic.ttf');
+}
