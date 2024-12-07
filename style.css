@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     text-align: center;
+    margin: 0em 32em;
 }
 
 ul {
@@ -9,4 +10,8 @@ ul {
     text-decoration: none;
     padding: 0;
     margin: 0;
+}
+
+li {
+    width: auto;
 }
