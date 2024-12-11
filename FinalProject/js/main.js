@@ -185,12 +185,12 @@ $(document).ready(() => {
 				case "Hourly":
 					console.log("Hourly forecast selected.");
 					forecastUrl = `https://api.open-meteo.com/v1/forecast`;
-					forecastParams = `latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,weather_code,cloud_cover,visibility,wind_speed_10m,wind_direction_10m,wind_gusts_10m&past_days=1&models=best_match&timezone=auto${tempUnit}${windUnit}${precipitationUnit}`;
+					forecastParams = `latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m,relative_humidity_2m,precipitation_probability,weather_code,cloud_cover,visibility,wind_speed_10m,wind_direction_10m,wind_gusts_10m&models=best_match&timezone=auto${tempUnit}${windUnit}${precipitationUnit}`;
 					break;
 				case "Daily":
 					console.log("Daily forecast selected.");
 					forecastUrl = `https://api.open-meteo.com/v1/forecast`;
-					forecastParams = `latitude=${latitude}&longitude=${longitude}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weather_code,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant,precipitation_probability_max&forecast_days=1&past_days=1&models=best_match&timezone=auto${tempUnit}${windUnit}${precipitationUnit}`;
+					forecastParams = `latitude=${latitude}&longitude=${longitude}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,weather_code,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant,precipitation_probability_max&forecast_days=1&models=best_match&timezone=auto${tempUnit}${windUnit}${precipitationUnit}`;
 					break;
 				case "Weekly":
 					console.log("Weekly forecast selected.");
