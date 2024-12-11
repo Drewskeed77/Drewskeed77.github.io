@@ -394,11 +394,8 @@ $(document).ready(() => {
 								"NNW",
 							];
 
-							// Calculate the index for the directions array
-							// The degrees returned is added to 22.5 (360 /16) then divided by 45
-							// then modulus 16 to map it to be the indexes 0 - 15 to get the directions from the array
-							let directionIndex = Math.floor((windDirection + 22.5) / 45) % 16;
-
+							/* Source for formula:  https://gist.github.com/theKAKAN/b40bf54144a6eb90313ad00681e3fbcc */
+							let directionIndex = parseInt(windDirection / 22.5 + 0.5) % 16;
 							// Return the corresponding cardinal direction and degrees
 							return directions[directionIndex] + " (" + windDirection + "°)";
 						},
@@ -524,11 +521,8 @@ $(document).ready(() => {
 								"NNW",
 							];
 
-							// Calculate the index for the directions array
-							// Calculate the index for the directions array
-							// The degrees returned is added to 22.5 (360 /16) then divided by 45
-							// then modulus 16 to map it to be the indexes 0 - 15 to get the directions from the array
-							let directionIndex = Math.floor((windDirection + 22.5) / 45) % 16;
+							/* Source for formula:  https://gist.github.com/theKAKAN/b40bf54144a6eb90313ad00681e3fbcc */
+							let directionIndex = parseInt(windDirection / 22.5 + 0.5) % 16;
 
 							// Return the corresponding cardinal direction and degrees
 							return directions[directionIndex] + " (" + windDirection + "°)";
@@ -655,11 +649,8 @@ $(document).ready(() => {
 								"NNW",
 							];
 
-							// Calculate the index for the directions array
-							// Calculate the index for the directions array
-							// The degrees returned is added to 22.5 (360 /16) then divided by 45
-							// then modulus 16 to map it to be the indexes 0 - 15 to get the directions from the array
-							let directionIndex = Math.floor((windDirection + 22.5) / 45) % 16;
+							/* Source for formula:  https://gist.github.com/theKAKAN/b40bf54144a6eb90313ad00681e3fbcc */
+							let directionIndex = parseInt(windDirection / 22.5 + 0.5) % 16;
 
 							// Return the corresponding cardinal direction and degrees
 							return directions[directionIndex] + " (" + windDirection + "°)";
