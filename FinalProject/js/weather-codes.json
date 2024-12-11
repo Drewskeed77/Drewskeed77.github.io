@@ -1,0 +1,402 @@
+{
+    "00": {
+        "description": "Cloud development not observed or not observable",
+        "image": "images/clear-day.svg"
+    },
+    "01": {
+        "description": "Clouds generally dissolving or becoming less developed",
+        "image": "images/clear-day.svg"
+    },
+    "02": {
+        "description": "State of sky on the whole unchanged",
+        "image": "images/clear-day.svg"
+    },
+    "03": {
+        "description": "Clouds generally forming or developing",
+        "image": "images/fair-day.svg"
+    },
+    "04": {
+        "description": "Visibility reduced by smoke",
+        "image": "images/haze.svg"
+    },
+    "05": {
+        "description": "Haze",
+        "image": "images/haze.svg"
+    },
+    "06": {
+        "description": "Widespread dust in suspension",
+        "image": "images/hurricane.svg"
+    },
+    "07": {
+        "description": "Dust or sand raised by wind",
+        "image": "images/cloudy.svg"
+    },
+    "08": {
+        "description": "Well developed dust whirl(s) or sand whirl(s) seen",
+        "image": "images/cloudy.svg"
+    },
+    "09": {
+        "description": "Duststorm or sandstorm",
+        "image": "images/cloudy.svg"
+    },
+    "10": {
+        "description": "Mist",
+        "image": "images/fog.svg"
+    },
+    "11": {
+        "description": "Patches of shallow fog or ice fog",
+        "image": "images/fog.svg"
+    },
+    "12": {
+        "description": "More or less continuous fog or ice fog",
+        "image": "images/fog.svg"
+    },
+    "13": {
+        "description": "Lightning visible, no thunder heard",
+        "image": "images/isolated-thunderstorms.svg"
+    },
+    "14": {
+        "description": "Precipitation within sight, not reaching the ground",
+        "image": "images/rain-and-sleet-mix.svg"
+    },
+    "15": {
+        "description": "Precipitation within sight, distant",
+        "image": "images/rain-and-snow-mix.svg"
+    },
+    "16": {
+        "description": "Precipitation within sight, near the station",
+        "image": "images/rainy-1.svg"
+    },
+    "17": {
+        "description": "Thunderstorm, no precipitation",
+        "image": "images/thunder.svg"
+    },
+    "18": {
+        "description": "Squalls",
+        "image": "images/severe-thunderstorm.svg"
+    },
+    "19": {
+        "description": "Funnel cloud(s) (Tornado or waterspout)",
+        "image": "images/tornado.svg"
+    },
+    "20": {
+        "description": "Drizzle (not freezing) or snow grains",
+        "image": "images/rainy-1.svg"
+    },
+    "21": {
+        "description": "Rain (not freezing)",
+        "image": "images/rainy-1.svg"
+    },
+    "22": {
+        "description": "Snow",
+        "image": "images/snow.svg"
+    },
+    "23": {
+        "description": "Rain and snow or ice pellets",
+        "image": "images/rain-and-sleet-mix.svg"
+    },
+    "24": {
+        "description": "Freezing drizzle or freezing rain",
+        "image": "images/rainy-1.svg"
+    },
+    "25": {
+        "description": "Shower(s) of rain",
+        "image": "images/rainy-4.svg"
+    },
+    "26": {
+        "description": "Shower(s) of snow, or of rain and snow",
+        "image": "images/snowy-3.svg"
+    },
+    "27": {
+        "description": "Shower(s) of hail, or of rain and hail",
+        "image": "images/rainy-5.svg"
+    },
+    "28": {
+        "description": "Fog or ice fog",
+        "image": "images/fog.svg"
+    },
+    "29": {
+        "description": "Thunderstorm",
+        "image": "images/thunder.svg"
+    },
+    "30": {
+        "description": "Slight or moderate duststorm or sandstorm",
+        "image": "images/cloudy.svg"
+    },
+    "31": {
+        "description": "No appreciable change in duststorm or sandstorm",
+        "image": "images/cloudy.svg"
+    },
+    "32": {
+        "description": "Duststorm or sandstorm has begun or increased",
+        "image": "images/cloudy.svg"
+    },
+    "33": {
+        "description": "Severe duststorm or sandstorm has decreased",
+        "image": "images/cloudy.svg"
+    },
+    "34": {
+        "description": "Severe duststorm or sandstorm, no appreciable change",
+        "image": "images/cloudy.svg"
+    },
+    "35": {
+        "description": "Severe duststorm or sandstorm has begun or increased",
+        "image": "images/cloudy.svg"
+    },
+    "36": {
+        "description": "Slight or moderate blowing snow, generally low",
+        "image": "images/snowy-3.svg"
+    },
+    "37": {
+        "description": "Heavy drifting snow",
+        "image": "images/snowy-6.svg"
+    },
+    "38": {
+        "description": "Slight or moderate blowing snow, generally high",
+        "image": "images/snowy-4.svg"
+    },
+    "39": {
+        "description": "Heavy drifting snow",
+        "image": "images/snowy-6.svg"
+    },
+    "40": {
+        "description": "Fog or ice fog at a distance",
+        "image": "images/fog.svg"
+    },
+    "41": {
+        "description": "Fog or ice fog in patches",
+        "image": "images/fog.svg"
+    },
+    "42": {
+        "description": "Fog or ice fog, sky visible",
+        "image": "images/fog.svg"
+    },
+    "43": {
+        "description": "Fog or ice fog, sky invisible",
+        "image": "images/fog.svg"
+    },
+    "44": {
+        "description": "Fog or ice fog, sky visible, no appreciable change",
+        "image": "images/fog.svg"
+    },
+    "45": {
+        "description": "Fog or ice fog, sky invisible",
+        "image": "images/fog.svg"
+    },
+    "46": {
+        "description": "Fog or ice fog, sky visible, has become thicker",
+        "image": "images/fog.svg"
+    },
+    "47": {
+        "description": "Fog or ice fog, sky invisible",
+        "image": "images/fog.svg"
+    },
+    "48": {
+        "description": "Fog, depositing rime, sky visible",
+        "image": "images/fog.svg"
+    },
+    "49": {
+        "description": "Fog, depositing rime, sky invisible",
+        "image": "images/fog.svg"
+    },
+    "50": {
+        "description": "Drizzle, not freezing, intermittent, slight",
+        "image": "images/rainy-1.svg"
+    },
+    "51": {
+        "description": "Drizzle, not freezing, continuous",
+        "image": "images/rainy-1.svg"
+    },
+    "52": {
+        "description": "Drizzle, not freezing, intermittent, moderate",
+        "image": "images/rainy-2.svg"
+    },
+    "53": {
+        "description": "Drizzle, not freezing, continuous",
+        "image": "images/rainy-1.svg"
+    },
+    "54": {
+        "description": "Drizzle, not freezing, intermittent, heavy",
+        "image": "images/rainy-3.svg"
+    },
+    "55": {
+        "description": "Drizzle, not freezing, continuous",
+        "image": "images/rainy-1.svg"
+    },
+    "56": {
+        "description": "Drizzle, freezing, slight",
+        "image": "images/rainy-1.svg"
+    },
+    "57": {
+        "description": "Drizzle, freezing, moderate or heavy",
+        "image": "images/rainy-1.svg"
+    },
+    "58": {
+        "description": "Drizzle and rain, slight",
+        "image": "images/rainy-4.svg"
+    },
+    "59": {
+        "description": "Drizzle and rain, moderate or heavy",
+        "image": "images/rainy-5.svg"
+    },
+    "60": {
+        "description": "Rain, not freezing, intermittent, slight",
+        "image": "images/rainy-4.svg"
+    },
+    "61": {
+        "description": "Rain, not freezing, continuous",
+        "image": "images/rainy-7.svg"
+    },
+    "62": {
+        "description": "Rain, not freezing, intermittent, moderate",
+        "image": "images/rainy-5.svg"
+    },
+    "63": {
+        "description": "Rain, not freezing, continuous",
+        "image": "images/rainy-7.svg"
+    },
+    "64": {
+        "description": "Rain, not freezing, intermittent, heavy",
+        "image": "images/rainy-6.svg"
+    },
+    "65": {
+        "description": "Rain, not freezing, continuous",
+        "image": "images/rainy-7.svg"
+    },
+    "66": {
+        "description": "Rain, freezing, slight",
+        "image": "images/rainy-1.svg"
+    },
+    "67": {
+        "description": "Rain, freezing, moderate or heavy",
+        "image": "images/rainy-1.svg"
+    },
+    "68": {
+        "description": "Rain and snow, slight",
+        "image": "images/rain-and-snow-mix.svg"
+    },
+    "69": {
+        "description": "Rain and snow, moderate or heavy",
+        "image": "images/rain-and-snow-mix.svg"
+    },
+    "70": {
+        "description": "Intermittent fall of snowflakes, slight",
+        "image": "images/snowy-3.svg"
+    },
+    "71": {
+        "description": "Continuous fall of snowflakes",
+        "image": "images/snowy-6.svg"
+    },
+    "72": {
+        "description": "Intermittent fall of snowflakes, moderate",
+        "image": "images/snowy-4.svg"
+    },
+    "73": {
+        "description": "Continuous fall of snowflakes",
+        "image": "images/snowy-6.svg"
+    },
+    "74": {
+        "description": "Intermittent fall of snowflakes, heavy",
+        "image": "images/snowy-5.svg"
+    },
+    "75": {
+        "description": "Continuous fall of snowflakes",
+        "image": "images/snowy-6.svg"
+    },
+    "76": {
+        "description": "Diamond dust",
+        "image": "images/snowy-1.svg"
+    },
+    "77": {
+        "description": "Snow grains",
+        "image": "images/snowy-1.svg"
+    },
+    "78": {
+        "description": "Isolated star-like snow crystals",
+        "image": "images/snowy-2.svg"
+    },
+    "79": {
+        "description": "Ice pellets",
+        "image": "images/rain-and-sleet-mix.svg"
+    },
+    "80": {
+        "description": "Rain shower(s), slight",
+        "image": "images/rainy-1.svg"
+    },
+    "81": {
+        "description": "Rain shower(s), moderate or heavy",
+        "image": "images/rainy-5.svg"
+    },
+    "82": {
+        "description": "Rain shower(s), violent",
+        "image": "images/rainy-6.svg"
+    },
+    "83": {
+        "description": "Shower(s) of rain and snow mixed, slight",
+        "image": "images/rain-and-snow-mix.svg"
+    },
+    "84": {
+        "description": "Shower(s) of rain and snow mixed, moderate or heavy",
+        "image": "images/rain-and-snow-mix.svg"
+    },
+    "85": {
+        "description": "Snow shower(s), slight",
+        "image": "images/snowy-2.svg"
+    },
+    "86": {
+        "description": "Snow shower(s), moderate or heavy",
+        "image": "images/snowy-4.svg"
+    },
+    "87": {
+        "description": "Shower(s) of snow pellets or small hail, with or without rain",
+        "image": "images/rainy-3.svg"
+    },
+    "88": {
+        "description": "Shower(s) of snow pellets or small hail, moderate or heavy",
+        "image": "images/rainy-5.svg"
+    },
+    "89": {
+        "description": "Shower(s) of hail, with or without rain",
+        "image": "images/rainy-4.svg"
+    },
+    "90": {
+        "description": "Shower(s) of hail, moderate or heavy",
+        "image": "images/rainy-5.svg"
+    },
+    "91": {
+        "description": "Slight rain, Thunderstorm during the preceding hour",
+        "image": "images/thunder.svg"
+    },
+    "92": {
+        "description": "Moderate or heavy rain",
+        "image": "images/rainy-6.svg"
+    },
+    "93": {
+        "description": "Slight snow, or rain and snow mixed or hail",
+        "image": "images/snowy-3.svg"
+    },
+    "94": {
+        "description": "Moderate or heavy snow, or rain and snow mixed or hail",
+        "image": "images/snowy-6.svg"
+    },
+    "95": {
+        "description": "Thunderstorm, slight or moderate, without hail",
+        "image": "images/thunder.svg"
+    },
+    "96": {
+        "description": "Thunderstorm, slight or moderate, with hail",
+        "image": "images/thunder.svg"
+    },
+    "97": {
+        "description": "Thunderstorm, heavy, without hail",
+        "image": "images/thunder.svg"
+    },
+    "98": {
+        "description": "Thunderstorm combined with duststorm or sandstorm",
+        "image": "images/thunder.svg"
+    },
+    "99": {
+        "description": "Thunderstorm, heavy, with hail",
+        "image": "images/thunder.svg"
+    }
+}

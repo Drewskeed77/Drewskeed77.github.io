@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General Body Styles */
 body {
     margin: 0;
@@ -20,20 +26,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
 }
 
-#options {
-    align-items: center;
-}
 
-#helpDiv {
-    background-color: #33354C;  /* Darker section for search area */
-    border: 2px solid #1E1E2F;
-    border-radius: 1em;
-    margin: .5em;
-    padding: 1em;
-    width: 400px;
-    top: 100px;
-    right: 10px;
-}
 
 /* Search Input */
 input {
@@ -63,9 +56,10 @@ button {
 }
 
 button:hover {
-    background-color: #7C7F96;  /* Lighten on hover */
+    background-color: #7C7F96; 
 }
 
+/* General Page Styles*/
 /* Main Wrapper */
 #main-wrapper {
     background-color: #1E1E2F;
@@ -74,21 +68,39 @@ button:hover {
     display: flex;
     flex-direction: column;
     min-width: 600px;
-    max-width: 800px;
+    max-width: 1000px;
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#options div {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #33354C;
+    gap: 10px;
+    margin: 0em 1em;
+    padding: .5em 1em;
+    border-radius: 1em;
 }
 
 /* Search Wrapper */
 #search-wrapper {
     text-align: center;
     padding: 2em 1em;
-    background-color: #33354C;  /* Darker section for search area */
+    background-color: #33354C;
     border-radius: 8px;
 }
 
 /* Information Wrapper */
 #information-wrapper {
     padding: 10px 1em;
-    background-color: #373A4D;  /* Dark gray-green background */
+    background-color: #373A4D;
     border-radius: 8px;
     height: 40px;
     margin-top: 2em;
@@ -99,12 +111,15 @@ button:hover {
 
 /* Forecast Container */
 #forecast-container {
-    background-color: #292B38;  /* Dark background for forecast container */
+    background-color: #292B38;
     height: auto;
-    width: auto;
+    width: 100%;
     padding: 1.5em 2em;
     margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 8px;
+    display: none;
 }
 
 /* Forecast Wrapper (Grid layout for forecast cards) */
@@ -114,47 +129,56 @@ button:hover {
     padding: 1.5em 0;
 }
 
+/* Forecast Selection Dropdown */
 #forecast-options {
-    padding: .5em 1em;
     border: none;
     outline: none;
-    background-color: #2E2F40;
+    background-color: #33354C;
     color: white;
 }
 
-/* Forecast Card Style */
+.logo {
+    width: 200px;
+    filter: brightness(1.6);
+}
+
+.logo:hover {
+    filter: brightness(2.0);
+}
+
+/* Forecast Card Styles */
 .forecast-card {
-    background-color: #2E2F40;  /* Card background with dark theme */
+    background-color: #2E2F40; 
     width: 100%;
     padding: 1em;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .forecast-card:hover {
-    transform: translateY(-8px);  /* Slight hover effect for a modern feel */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow on hover */
+    transform: translateY(-8px);  
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); 
 }
 
 /* Time Element */
 .forecast-card .time {
     font-size: 14px;
     font-weight: bold;
-    color: #A9A9B5; /* Subtle gray for time */
+    color: #A9A9B5; 
 }
 
 /* Temperature Element */
 .forecast-card .temp {
     font-size: 20px;
-    color: #FF9F00; /* Bright orange for temperature */
+    color: #FF9F00; 
 }
 
 /* Condition Text */
 .forecast-card .condition {
     font-size: 13px;
-    color: #A9A9B5;  /* Lighter gray for weather description */
+    color: #A9A9B5;  
     margin-top: 0.5em;
 }
 
@@ -162,90 +186,92 @@ button:hover {
 .forecast-card img {
     width: 30px;
     height: 30px;
-    margin: 10px 0;
 }
 
-/* Test Image */
-#test-image {
-    width: 30px;
-    height: 30px;
+/* Weather Details */
+.category-icon {
+    width: 20px;
 }
 
-#help {
-    width: 30px;
-    height: 30px;
+.category-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.spinner {
-    display: block;
-    margin: 0 auto; /* Optional: Centers the spinner */
+.category-value {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.weather-img-container img {
-    display: none;  /* Hide the weather image initially */
-}
+
 
 /* Toggle Switch CSS */
 /* The switch - the box around the slider */
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
+    width: 30px;
+    height: 17px;
+    top: 5px;
+}
   
   /* Hide default HTML checkbox */
-  .switch input {
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
   /* The slider */
-  .slider {
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #1E1E2F;;
+    background-color: #1E1E2F;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
   
-  .slider:before {
+.slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #2E2F40;
+    height: 13px;
+    width: 13px;
+    left: 0px;
+    bottom: 2px;
+    background-color: #5D5F73;
     -webkit-transition: .4s;
     transition: .4s;
-  }
+}
   
-  input:checked + .slider {
-    background-color: #4d506d;;
-  }
+input:checked + .slider {
+    background-color: #1E1E2F;
+}
   
-  input:focus + .slider {
-    box-shadow: 0 0 1px #4d506d;;
-  }
+input:focus + .slider {
+    box-shadow: 0 0 1px #1E1E2F;
+}
   
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
+input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
   
   /* Rounded sliders */
-  .slider.round {
+.slider.round {
     border-radius: 34px;
-  }
+}
   
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
-  }
+}
 
+p {
+    margin: 0;
+}

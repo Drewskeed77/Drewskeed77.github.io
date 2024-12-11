@@ -10,24 +10,51 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-
+    
     <header class="d-flex flex-wrap align-content-center">
-        <div>Weather WhereEver</div>
+        <div><a href="https://geraldburke.com/jreed28/FinalProject/"><img class="logo" src="images/logo.png" alt=""></a></div>
         <div id="options">
-            <select name="forecast-options" id="forecast-options">
-                <option value="daily">Daily</option>
-                <option value="hourly">Hourly</option>
-                <option value="weekly">Weekly</option>
-            </select>
-            <img id="help" src="images/help.png" alt="help icon" onclick="displayHelp()" onmouseout="hideHelp()">
-            <p style="display: inline;">Global </p>
-            <!-- Rounded switch -->
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
+            <div>
+                <select name="forecast-options" id="forecast-options">
+                    <option value="daily">Daily</option>
+                    <option value="hourly">Hourly</option>
+                    <option value="weekly">Weekly</option>
+                </select>
+            </div>
+           
+            <div>
+                <p style="display: inline;">C°</p>
+                <!-- Rounded switch -->
+                <!-- https://www.w3schools.com/howto/howto_css_switch.asp-->
+                <label class="switch">
+                    <input id="temperature-unit" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p style="display: inline;">F°</p>
+            </div>
 
-           <p style="display: inline;"> Local</p>
+            <div>
+                <p style="display: inline;">km/h</p>
+                <!-- Rounded switch -->
+                <!-- https://www.w3schools.com/howto/howto_css_switch.asp-->
+                <label class="switch">
+                    <input id="wind-unit" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p style="display: inline;">mph</p>
+            </div>
+
+            <div>
+                <p style="display: inline;">mm</p>
+                <!-- Rounded switch -->
+                <!-- https://www.w3schools.com/howto/howto_css_switch.asp-->
+                <label class="switch">
+                    <input id="precipitation-unit" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p style="display: inline;">inch</p>
+            </div>
+        
         </div>
     </header>
     <section id="main-wrapper">
@@ -39,24 +66,22 @@
                         Search
                     </button>
                 </div>
-                <!-- https://www.w3schools.com/howto/howto_css_switch.asp-->
-                <div>
-                   
-                </div>
             </div>
         </div>
 
-        <div id="forecast-container">
+        <div id="forecast-container" style="display: none;">
             <div id="weather-type"></div>
 
             <div>
-                <div id="info"></div>
-                <div id="info"></div>
+                <div class="d-flex flex-wrap justify-content-between" id="info"></div>
             </div>
             <div id="forecast-wrapper">
             </div>
         </div>
     </section>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
