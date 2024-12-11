@@ -68,7 +68,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     min-width: 600px;
-    max-width: 1000px;
+    max-width: 1100px;
 }
 
 #options {
